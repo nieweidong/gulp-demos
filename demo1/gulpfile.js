@@ -126,9 +126,12 @@ gulp.task(bui['webserver'], function() {
       port: 8001,
       livereload: true,
       directoryListing: true,
-      open: true
+      open: 'public/html/index.html'
     }));
 });
 gulp.task('default', function(callback) {
-  runSequence(bui['watch'], bui['webserver'], callback)
+  runSequence(
+    bui['webserver'],
+    bui['watch'],
+    callback)
 });
