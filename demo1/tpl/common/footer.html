@@ -1,0 +1,27 @@
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/nprogress.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/toastr.min.js"></script>
+
+  <script>
+    NProgress.done();
+    $('#menu_toggle').click(function() {
+      if ($('body').hasClass('nav-md')) {
+        $('body').removeClass('nav-md').addClass('nav-sm');
+        $('.left_col').removeClass('scroll-view').removeAttr('style');
+        $('.sidebar-footer').hide();
+
+        if ($('#sidebar-menu li').hasClass('active')) {
+          $('#sidebar-menu li.active').addClass('active-sm').removeClass('active');
+        }
+      } else {
+        $('body').removeClass('nav-sm').addClass('nav-md');
+        $('.sidebar-footer').show();
+
+        if ($('#sidebar-menu li').hasClass('active-sm')) {
+          $('#sidebar-menu li.active-sm').addClass('active').removeClass('active-sm');
+        }
+      }
+    });
+  </script>
