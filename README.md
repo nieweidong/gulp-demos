@@ -4,7 +4,7 @@ This is a collection of simple demo of ```gulp.js```.
 
 ## Intro
 
-> 暂时先提供这个较基础的demo，后续会继续补上更多的 demo.
+> 暂时先提供这个较通用的栗子，后续会尽快继续补上个较复杂的栗子:)
 
 [gulp-load-plugins](https://www.npmjs.com/package/gulp-load-plugins)这个插件确实可以有效解决 ```require``` 大量 ```gulp``` 插件的问题，但是我个人觉得使用这个插件会略微影响俺的代码阅读，所以在 ```gulp-demos``` 没有使用哈。但是，这插件确实能解决各种 ```require``` 的问题，还是强烈推荐哒:)
 
@@ -25,8 +25,6 @@ This is a collection of simple demo of ```gulp.js```.
 3. ```gulp```
 
 ## More
-
-- 更复杂的 demo
 
 ## License
 
