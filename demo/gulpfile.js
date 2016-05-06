@@ -4,6 +4,7 @@
   Required plugins
 -------------------------------------------------------------------*/
 const gulp = require('gulp')
+const autoprefixer = require('gulp-autoprefixer')
 const cleanCSS = require('gulp-clean-css')
 const concat = require('gulp-concat')
 const fileinclude = require('gulp-file-include')
@@ -19,7 +20,7 @@ const runSequence = require('run-sequence')
 /*-------------------------------------------------------------------
   Configuration
 -------------------------------------------------------------------*/
-const projectName = 'demo1'
+const projectName = 'demo'
 const qiniu = {
   accessKey: '',
   secretKey: '',
@@ -63,7 +64,6 @@ const deploy = {
   html: path.deploy + '/html'
 }
 const smile = gutil.colors.bgBlue(' ^_^ ')
-
 let watchArr = []
 
 /*-------------------------------------------------------------------
@@ -85,6 +85,7 @@ gulp.task(bui['images'], function() {
 gulp.task(bui['css'], function() {
   gutil.log(smile + ' -> ' + bui['css']);
   return gulp.src(watch.css)
+    .pipe(autoprefixer({browsers: ['last 2 versions'],}))
     .pipe(cleanCSS())
     .pipe(flatten())
     .pipe(gulp.dest(deploy.css));
@@ -93,6 +94,7 @@ gulp.task(bui['scss'], function() {
   gutil.log(smile + ' -> ' + bui['scss']);
   return gulp.src(watch.scss)
     .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer({browsers: ['last 2 versions'],}))
     .pipe(cleanCSS())
     .pipe(flatten())
     .pipe(gulp.dest(deploy.css));
@@ -121,6 +123,7 @@ gulp.task(bui['watch'], function() {
   gulp.watch(watchArr, watchBuiArr);
 });
 gulp.task(bui['webserver'], function() {
+  gutil.log(smile + ' -> ' + bui['webserver']);
   gulp.src('./')
     .pipe(webserver({
       port: 8001,

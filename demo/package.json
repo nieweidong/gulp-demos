@@ -1,7 +1,7 @@
 {
-  "name": "gulp-demos1",
+  "name": "gulp-demo",
   "version": "0.1.0",
-  "description": "This is a collection of simple demos of gulp.js",
+  "description": "This is a simple demos of gulp.js",
   "keywords": [
     "gulp",
     "gulp demo",
@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
     "gulp-clean-css": "^2.0.7",
     "gulp-concat": "^2.6.0",
     "gulp-file-include": "^0.13.7",
