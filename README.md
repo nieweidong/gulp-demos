@@ -2,7 +2,7 @@
 
 This is a collection of simple demo of ```gulp.js```.
 
-[gulp使用小结](http://www.fefork.com/gulp_1/) 
+欢迎配合偶的那篇[gulp使用小结](http://www.fefork.com/gulp_1/):)
 
 ## Intro
 
