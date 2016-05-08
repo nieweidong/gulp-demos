@@ -2,6 +2,8 @@
 
 This is a collection of simple demo of ```gulp.js```.
 
+[gulp使用小结](http://www.fefork.com/gulp_1/) 
+
 ## Intro
 
 > 暂时先提供这个较通用的栗子，后续会尽快继续补上个较复杂的栗子:)
@@ -22,7 +24,7 @@ This is a collection of simple demo of ```gulp.js```.
 
   如果没有安装 ```cnpm``` 那么请换 ```npm``` 安装吧，速度...
 
-3. ```$ gulp``` 
+3. ```$ gulp```
 
 ## More
 
