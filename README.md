@@ -14,15 +14,15 @@ This is a collection of simple demo of ```gulp.js```.
 
 ## Usage
 
-1. ```git clone https://github.com/nieweidong/gulp-demos.git```
+1. ```$ git clone https://github.com/nieweidong/gulp-demos.git```
 
-2. ```cd gulp-demos/demo && cnpm i```
+2. ```$ cd gulp-demos/demo && cnpm i```
 
   因为依赖的 ```gulp-sass``` 需要编译安装，所以安装时间略长，预计得5分钟左右，建议去泡杯咖啡休息休息:)
 
   如果没有安装 ```cnpm``` 那么请换 ```npm``` 安装吧，速度...
 
-3. ```gulp```
+3. ```$ gulp``` 
 
 ## More
 
