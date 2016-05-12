@@ -20,7 +20,7 @@ const runSequence = require('run-sequence')
 /*-------------------------------------------------------------------
   Configuration
 -------------------------------------------------------------------*/
-const projectName = 'demo2'
+const projectName = 'demo'
 const qiniu = {
   accessKey: '',
   secretKey: '',

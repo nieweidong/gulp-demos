@@ -1,7 +1,7 @@
 {
-  "name": "gulp-demo2",
+  "name": "gulp-demo",
   "version": "0.1.0",
-  "description": "This is a simple demos of gulp.js",
+  "description": "This is a simple demo of gulp.js",
   "keywords": [
     "gulp",
     "gulp demo",
